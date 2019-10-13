@@ -48,12 +48,14 @@ void TrazarParabola (float a, int xf)
    {
    F = F + a*(2*x + 3);
    glVertex2i(x,y);
+   glVertex2i(-x,y);
    }
   else
    {
    F = F + a*(2*x+3) - 1;
    y++;
    glVertex2i(x,y);
+   glVertex2i(-x,y);
    }
   }
 
@@ -69,11 +71,13 @@ void TrazarParabola (float a, int xf)
    F = F + a*(2*x+2) - 1;
    x++;
    glVertex2i(x,y);
+   glVertex2i(-x,y);
    }
   else
    {
    F = F + 1;
    glVertex2i(x,y);
+   glVertex2i(-x,y);
    }
   }
  }
