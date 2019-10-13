@@ -8,19 +8,9 @@
 #include <iostream>
 using namespace std;
 
-/*/////
-#define X1 10
-#define Y1 10
-#define X2 -400
-#define Y2 200
-/////*/
 
-//////
-#define X1 0
-#define Y1 0
-#define X2 200
-#define Y2 0
-/////*/
+
+
 
 
 // function to initialize
@@ -120,8 +110,23 @@ void display (void)
     glClear(GL_COLOR_BUFFER_BIT);
     glBegin(GL_POINTS);
 
+    //////
+    #define X1 10
+    #define Y1 10
+    #define X2 -400
+    #define Y2 200
+    /////*/
+
+    /*/////
+    #define X1 0
+    #define Y1 0
+    #define X2 200
+    #define Y2 0
+    /////*/
+
     TrazarRecta(X1,Y1,X2,Y2);
 
+    //#define
 
     glEnd();
     glFlush();
